@@ -1,28 +1,21 @@
 do 
 
-local function devasl(msg, matches) 
-
-if ( msg.text ) then
-
-  if ( msg.to.type == "user" ) then
-
-return "اذا كنت تريد التحدث مع المطور اضعط ع احد المعرفات التالي \n 🎀 @Dev_ALBADRY - @Mahdi_ALBadry \n او اذا محظور اضغط هنا \n 🎀   @OLLILLO_bot \n  🎀قناة الـسـورس \n   @DEVASL \n "
-  end
-   
-end 
-
--- @mahdi_albadry
-
+local function run(msg, matches) 
+ local sudo = 220530711
+ 
+ local r = get_receiver(msg)
+  send_large_msg(r, "اصبر 👮🏻🖐🏻 راح اصيحلك المطور 😊")
+  send_large_msg("user#id"..sudo, "🎴 هناك شخص 👤 بحاجة اليك 🔷✔️\n\n ".."⛔️ المعرف : @"..msg.from.username.."\n 🔋 الايدي : "..msg.from.id.."\n 📋 اسم المجموعة : "..msg.to.title.."\n 🆔 ايدي المجموعة : "..msg.from.id..'\n 🕚 الوقت : '..os.date(' %T*', os.time())..'\n 📅 التاريخ : '..os.date('!%A, %B %d, %Y*\n', timestamp))
 end 
 
 return { 
   patterns = { 
-       "(.*)$"
+     "^(@MAHDI_ALBADRY)$" 
   }, 
-  run = devasl, 
+  run = run, 
 } 
 
-end 
+end
 --[[
 #
 #ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ

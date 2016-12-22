@@ -1,28 +1,3 @@
-do 
-
-local function devasl(msg, matches) 
-
-if ( msg.text ) then
-
-  if ( msg.to.type == "user" ) then
-
-return "اذا كنت تريد التحدث مع المطور اضعط ع احد المعرفات التالي \n 🎀 @Dev_ALBADRY - @Mahdi_ALBadry \n او اذا محظور اضغط هنا \n 🎀   @OLLILLO_bot \n  🎀قناة الـسـورس \n   @DEVASL \n "
-  end
-   
-end 
-
--- @mahdi_albadry
-
-end 
-
-return { 
-  patterns = { 
-       "(.*)$"
-  }, 
-  run = devasl, 
-} 
-
-end 
 --[[
 #
 #ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -37,3 +12,40 @@ end
 #ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 #
 ]]
+
+do
+
+function run(msg, matches)
+return [[
+
+👮🏻✋🏻مـــطـور الــسـوورس 👮🏻✋🏻
+
+     👑 مـهـدي الـبـدري 👑
+
+🎗@DEV_ALBADRY
+🎗@MAHDI_ALBADRY
+
+👮🏻✋🏻الســوورس تـابـع للقـناه
+
+🎗 @DEVASL
+
+👮🏻✋🏻اســمم الـسـوورس
+
+🎗 #DEVASL V1
+
+👮🏻✋🏻بـووت تـوواصـل
+
+🎗 @OLLILLO_bot
+
+]]
+end
+
+return {
+description = "Shows bot q", 
+usage = "spam Shows bot q",
+patterns = {
+"^(مطور السورس)$",
+},
+run = run 
+}
+end

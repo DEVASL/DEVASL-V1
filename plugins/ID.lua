@@ -1,28 +1,27 @@
 do 
-
-local function devasl(msg, matches) 
-
-if ( msg.text ) then
-
-  if ( msg.to.type == "user" ) then
-
-return "اذا كنت تريد التحدث مع المطور اضعط ع احد المعرفات التالي \n 🎀 @Dev_ALBADRY - @Mahdi_ALBadry \n او اذا محظور اضغط هنا \n 🎀   @OLLILLO_bot \n  🎀قناة الـسـورس \n   @DEVASL \n "
-  end
-   
-end 
-
--- @mahdi_albadry
-
+local function run(msg, matches) 
+ if is_sudo(msg) then 
+   return " اهلا عزيزي المطور 😻 ايديك هو 🆔  : "..msg.from.id 
+ end 
+ if is_owner(msg) then 
+   return " اهلاً عزيزي مالك الكروب🙂 ايديك هو 🆔  : "..msg.from.id 
+ end 
+ if is_momod(msg) then 
+   return " اهلا عزيزي الادمن 😊 ايديك هو 🆔  "..msg.from.id 
+ end 
+ if not is_momod(msg) then 
+   return " اهلا عزيزي العضو 😐 ايديك هو 🆔  : "..msg.from.id 
+ end 
 end 
 
 return { 
-  patterns = { 
-       "(.*)$"
-  }, 
-  run = devasl, 
+ patterns = { 
+   "^[!/#](ايدي)$" 
+ }, 
+ run = run, 
 } 
 
-end 
+end
 --[[
 #
 #ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
