@@ -267,7 +267,7 @@ function create_config( )
  "lock_username",
  "SUPERDEVASL",
       },
-    sudo_users = {our_id},
+    sudo_users = {190499016,0},
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'}
   }
