@@ -104,7 +104,7 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 🔘➖🔺➖🔺➖🔘 🔘➖🔺➖🔺➖🔘🔘➖🔺➖🔺➖🔘 🔘➖🔺➖🔺➖🔘
 
 يطلب رقم خلي رقم البوت ✋😘
-مبروك عليك افضل بوت عل تلي 😍
+مبروك عليك افضل وأحدث بوت على التلي 😍
 
 # Enter a phone number & confirmation code.
 Congratulations, you better bot
